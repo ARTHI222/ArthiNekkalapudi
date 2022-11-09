@@ -14,9 +14,9 @@ eg;-
 step 1:->
 create user 'Hari' identified by 'hari123';
 step 2:->
-grant  all privileges on *.* to username;
+grant  all privileges on Star.Star to username;
 eg:->
-grant all privilege on *.* to 'Hari';
+grant all privilege on Star.Star to 'Hari';
 step 3:->
 eg:-> 
 system mysql -u hari -p ;
