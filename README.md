@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-##Instructions
+## Instructions
 1) Instruction
 Goto My sql create a new user and grant all the privileges to that user
 create user username identified by password;
