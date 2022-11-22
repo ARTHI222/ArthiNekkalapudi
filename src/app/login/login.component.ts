@@ -13,6 +13,9 @@ export class LoginComponent implements OnInit {
   message:any;
   display:any;
 
+  // if(localStorage.getItem("email"))
+  isLoggedIn = true;
+
   constructor(private service:ServiceService,private router:Router) { }
 
   ngOnInit(): void {
@@ -25,7 +28,10 @@ export class LoginComponent implements OnInit {
  let resp=this.service.userlogin(l);
 
  resp.subscribe((data)=>this.message=data)
+ if(localStorage.getItem("email"))
+ console.log(localStorage.getItem("email"))
  
+
  if(this.message==='Ok'){
   localStorage.setItem("password",""+epassword);
    localStorage.setItem("email",""+evalue);
