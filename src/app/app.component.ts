@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'MovieReviewSystem';
+  //console.log(localStorage.getItem("email"));
+  isLoggedIn = !!localStorage.getItem("email");
 }
+
