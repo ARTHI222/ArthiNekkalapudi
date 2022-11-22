@@ -8,10 +8,12 @@
   <div class="container"> 
     <a routerLink="home">
       <button type="button" class="btn btn-light">Home</button></a>
-    
-      <a routerLink="login">
-      <button type="button" class="btn btn-secondary">Login</button></a>
-    
+
+      <div *ngIf="!isLoggedIn">
+        <a routerLink="login">
+        <button type="button" class="btn btn-secondary">Login</button></a>
+  </div>
+
       <a routerLink="register">
         <button type="button" class="btn btn-success">Register</button></a>
       
@@ -23,6 +25,11 @@
           
             <a routerLink="aboutus">
               <button type="button" class="btn btn-info">About Us</button></a>
+
+
+           
+          
+               
             </div>
              
                
